@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="GM-X styling creation: The home of artisanal tailoring in Kotputli. Discover our bespoke process for creating exceptional garments for men, women, and youth.">
-    <title>GM-X styling creation | Artisanal Tailoring in Kotputli</title>
+    <meta name="description" content="GM-X styling creation: The home of expert tailoring in Kotputli. See our process for creating perfectly stitched clothes for men and youth.">
+    <title>GM-X styling creation | Expert Tailoring in Kotputli</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,28 +12,28 @@
 
     <style>
         /* ==========================================================================
-           GM-X STYLING CREATION: COMPLETE REDESIGN
+           GM-X STYLING CREATION: PROFESSIONAL REDESIGN
            ========================================================================== */
 
         /* 1. Root Variables & Foundational Styles
         -------------------------------------------------------------------------- */
         :root {
             --color-primary: #1a1a1a;
-            --color-secondary: #f9f9f9;
-            --color-accent: #c57b57;
-            --color-accent-dark: #b36a46;
+            --color-secondary: #fbfbfb; /* Slightly warmer than pure white */
+            --color-accent: #c09f58; /* Sophisticated Gold */
+            --color-accent-dark: #ad8f4e;
             --color-text: #333333;
             --color-text-muted: #666666;
             --color-white: #ffffff;
-            --color-border: #e5e5e5;
+            --color-border: #e8e8e8;
 
             --font-heading: 'DM Serif Display', serif;
             --font-body: 'Inter', sans-serif;
             
             --transition-speed: 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            --shadow-subtle: 0 2px 8px rgba(0,0,0,0.05);
-            --shadow-medium: 0 8px 24px rgba(0,0,0,0.08);
-            --shadow-strong: 0 12px 32px rgba(0,0,0,0.12);
+            --shadow-subtle: 0 4px 12px rgba(0,0,0,0.04);
+            --shadow-medium: 0 8px 24px rgba(0,0,0,0.07);
+            --shadow-strong: 0 12px 32px rgba(0,0,0,0.1);
         }
 
         *, *::before, *::after {
@@ -51,7 +51,7 @@
             font-family: var(--font-body);
             background-color: var(--color-white);
             color: var(--color-text);
-            line-height: 1.6;
+            line-height: 1.7; /* Increased for readability */
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             transition: background-color 0.3s ease, color 0.3s ease;
@@ -70,7 +70,7 @@
 
         p {
             color: var(--color-text-muted);
-            margin-bottom: 1rem;
+            margin-bottom: 1.25rem;
         }
 
         .container {
@@ -80,7 +80,7 @@
         }
 
         section {
-            padding: 100px 0;
+            padding: 120px 0; /* Increased padding for more space */
             overflow: hidden;
         }
         
@@ -88,6 +88,7 @@
             text-align: center;
             font-size: clamp(2.5rem, 5vw, 3.5rem);
             margin-bottom: 1rem;
+            letter-spacing: 0.5px; /* Added for elegance */
         }
 
         .section-subtitle {
@@ -95,13 +96,13 @@
             font-size: 1.125rem;
             color: var(--color-text-muted);
             max-width: 650px;
-            margin: 0 auto 60px auto;
+            margin: 0 auto 70px auto;
         }
         
         .cta-button { 
             display: inline-block; 
             background-color: var(--color-accent); 
-            color: #ffffff !important; /* Important to override dark mode variable */
+            color: #ffffff !important;
             padding: 16px 40px; 
             text-decoration: none; 
             border-radius: 8px; 
@@ -109,11 +110,12 @@
             transition: all 0.3s ease; 
             border: 2px solid var(--color-accent);
             cursor: pointer;
+            box-shadow: var(--shadow-subtle);
         }
         .cta-button:hover { 
             background-color: var(--color-accent-dark); 
             border-color: var(--color-accent-dark); 
-            transform: translateY(-3px);
+            transform: translateY(-4px);
             box-shadow: var(--shadow-medium);
         }
 
@@ -130,31 +132,31 @@
         }
 
         .header.scrolled {
-            background-color: var(--color-white);
+            background-color: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
             padding: 20px 5%;
             border-bottom: 1px solid var(--color-border);
-            box-shadow: var(--shadow-subtle);
         }
 
         .navbar { display: flex; justify-content: space-between; align-items: center; width: 100%; max-width: 1140px; margin: 0 auto; gap: 1rem;}
-        .logo { font-family: var(--font-heading); font-size: 2rem; text-decoration: none; color: var(--color-white); transition: color 0.3s ease; flex-shrink: 0; }
+        .logo { font-family: var(--font-heading); font-size: 2.25rem; text-decoration: none; color: var(--color-white); transition: color 0.3s ease; flex-shrink: 0; letter-spacing: 1px; }
         .header.scrolled .logo { color: var(--color-primary); }
         
         .nav-menu { display: flex; align-items: center; gap: 2rem; justify-content: flex-end; flex-grow: 1; }
         .nav-links { list-style: none; display: flex; gap: 2.5rem; }
         .nav-links a { text-decoration: none; color: var(--color-white); font-weight: 500; position: relative; padding-bottom: 5px; }
-        .nav-links a::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 0; height: 2px; background-color: var(--color-accent); transition: width 0.3s ease; }
+        .nav-links a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background-color: var(--color-accent); transition: width 0.3s ease; }
         .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
         .header.scrolled .nav-links a { color: var(--color-primary); }
 
-        .navbar-controls { display: flex; align-items: center; gap: 1rem; }
+        .navbar-controls { display: flex; align-items: center; gap: 1.5rem; }
         .hamburger { display: none; cursor: pointer; z-index: 1001; }
         .hamburger .bar { display: block; width: 25px; height: 2px; margin: 6px auto; transition: all 0.3s ease; background-color: var(--color-white); border-radius: 2px; }
         .header.scrolled .hamburger .bar { background-color: var(--color-primary); }
         
         .call-btn {
-            padding: 10px 22px;
-            border-radius: 8px;
+            padding: 10px 24px;
+            border-radius: 6px;
             text-decoration: none;
             font-weight: 500;
             transition: all 0.3s ease;
@@ -181,28 +183,29 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 0 20px;
+            padding: 120px 20px 0; 
+            box-sizing: border-box; 
             background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)), url('https://images.unsplash.com/photo-1633655442432-620aa55d7ac1?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
             color: #ffffff;
         }
         #home h1 { 
-            font-size: clamp(3.5rem, 8vw, 6rem); 
+            font-size: clamp(3.5rem, 8vw, 6.5rem); 
             color: #ffffff; 
-            text-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            text-shadow: 0 4px 20px rgba(0,0,0,0.3);
             font-style: italic;
         }
         #home .subtitle { 
-            font-size: clamp(1.1rem, 3vw, 1.25rem); 
+            font-size: clamp(1.1rem, 3vw, 1.3rem); 
             margin: 1.5rem auto 2.5rem; 
-            max-width: 600px; 
-            color: rgba(255, 255, 255, 0.9);
+            max-width: 650px; 
+            color: rgba(255, 255, 255, 0.95);
             font-family: var(--font-body);
         }
 
         /* 4. Specialities (Services) Section
         -------------------------------------------------------------------------- */
         #specialities { background-color: var(--color-secondary); }
-        .specialities-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
+        .specialities-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; }
         .speciality-card { 
             background: var(--color-white);
             padding: 2.5rem;
@@ -210,24 +213,25 @@
             box-shadow: var(--shadow-subtle);
             text-align: left;
             border: 1px solid var(--color-border);
-            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
             display: flex;
             flex-direction: column;
         }
         .speciality-card:hover {
             transform: translateY(-10px);
             box-shadow: var(--shadow-medium);
+            border-color: var(--color-accent);
         }
-        .speciality-icon { width: 40px; height: 40px; margin-bottom: 1.5rem; color: var(--color-accent); }
+        .speciality-icon { width: 44px; height: 44px; margin-bottom: 1.5rem; color: var(--color-accent); }
         .speciality-card h3 { font-size: 1.75rem; margin-bottom: 0.75rem; }
         .speciality-card p { font-size: 1rem; margin-bottom: 1.5rem; flex-grow: 1; }
         .speciality-card ul { list-style: none; padding: 1.5rem 0 0; margin-top: auto; border-top: 1px solid var(--color-border); }
-        .speciality-card li { margin-bottom: 0.75rem; display: flex; align-items: flex-start; gap: 10px; }
+        .speciality-card li { margin-bottom: 0.75rem; display: flex; align-items: flex-start; gap: 12px; }
         .speciality-card li::before {
             content: '✓';
             color: var(--color-accent);
             font-weight: 600;
-            margin-top: 2px;
+            margin-top: 4px;
         }
 
         /* 5. Our Process Section
@@ -242,17 +246,16 @@
         .process-steps::before {
             content: '';
             position: absolute;
-            top: 30px;
-            left: 5%;
-            right: 5%;
-            height: 2px;
-            background-image: linear-gradient(to right, var(--color-border) 50%, transparent 50%);
-            background-size: 16px 2px;
+            top: 34px;
+            left: 12.5%;
+            width: 75%;
+            height: 1px;
+            background-color: var(--color-border);
             z-index: 0;
         }
         .step-card { 
             position: relative; 
-            padding-top: 70px;
+            padding-top: 80px;
             text-align: center;
         }
         .step-card .step-number {
@@ -260,16 +263,16 @@
             top: 0;
             left: 50%;
             transform: translateX(-50%);
-            width: 60px;
-            height: 60px;
+            width: 70px;
+            height: 70px;
             border-radius: 50%;
-            border: 2px solid var(--color-border);
+            border: 1px solid var(--color-border);
             background-color: var(--color-white);
             display: flex;
             align-items: center;
             justify-content: center;
             font-family: var(--font-heading);
-            font-size: 1.5rem;
+            font-size: 1.75rem;
             color: var(--color-accent);
             z-index: 1;
             transition: all 0.3s ease;
@@ -278,7 +281,8 @@
             background-color: var(--color-accent);
             color: var(--color-white);
             border-color: var(--color-accent);
-            transform: translateX(-50%) scale(1.1);
+            transform: translateX(-50%) scale(1.05);
+            box-shadow: var(--shadow-medium);
         }
         .step-card h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
 
@@ -290,10 +294,12 @@
             overflow: hidden; 
             border-radius: 12px; 
             position: relative; 
-            height: 350px; 
+            height: 380px; 
             cursor: pointer; 
             box-shadow: var(--shadow-subtle);
+            transition: box-shadow 0.3s ease;
         }
+        .gallery-item:hover { box-shadow: var(--shadow-strong); }
         .gallery-item img { 
             width: 100%; 
             height: 100%; 
@@ -313,17 +319,18 @@
             transform: translateY(20px);
             transition: all 0.4s ease; 
             z-index: 2; 
-            background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%);
+            background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 100%);
         }
         .gallery-overlay-title { font-family: var(--font-heading); font-size: 1.75rem; color: var(--color-white); }
         
         @media (hover: hover) {
-            .gallery-item:hover img { transform: scale(1.1); }
+            .gallery-item:hover img { transform: scale(1.08); }
             .gallery-item:hover .gallery-overlay { opacity: 1; transform: translateY(0); }
         }
 
         /* 7. Testimonials Section
         -------------------------------------------------------------------------- */
+        #testimonials { background-color: var(--color-white); }
         .testimonial-slider { position: relative; max-width: 800px; margin: 0 auto; overflow: hidden; }
         .testimonial-slides { display: flex; transition: transform 0.5s ease-in-out; }
         .testimonial-card {
@@ -337,7 +344,7 @@
             font-family: var(--font-heading); 
             font-style: italic;
             font-size: 15rem; 
-            color: var(--color-secondary); 
+            color: rgba(0, 0, 0, 0.04); /* Made very subtle */
             position: absolute; 
             top: 50%; 
             left: 50%; 
@@ -345,68 +352,66 @@
             z-index: 0; 
             line-height: 1; 
         }
-        .testimonial-text { font-family: var(--font-heading); font-style: italic; font-size: clamp(1.5rem, 4vw, 2rem); margin-bottom: 2rem; position: relative; z-index: 1; color: var(--color-primary); }
-        .testimonial-author { font-weight: 600; color: var(--color-text-muted); font-size: 1rem; position: relative; z-index: 1; text-transform: uppercase; letter-spacing: 1px; }
+        .testimonial-text { font-family: var(--font-heading); font-style: italic; font-size: clamp(1.5rem, 4vw, 2.25rem); margin-bottom: 2.5rem; position: relative; z-index: 1; color: var(--color-primary); }
+        .testimonial-author { font-weight: 600; color: var(--color-text-muted); font-size: 1rem; position: relative; z-index: 1; text-transform: uppercase; letter-spacing: 1.5px; }
 
         .slider-nav {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            width: 100%;
+            width: 108%;
             display: flex;
             justify-content: space-between;
-            left: 0;
+            left: -4%;
             z-index: 10;
         }
 
         .slider-btn {
-            background-color: rgba(255,255,255, 0.7);
+            background-color: var(--color-white);
             border: 1px solid var(--color-border);
             border-radius: 50%;
-            width: 44px;
-            height: 44px;
+            width: 50px;
+            height: 50px;
             cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
             box-shadow: var(--shadow-subtle);
             transition: all 0.3s ease;
-            color: var(--color-primary);
+            color: var(--color-text-muted);
         }
-
         .slider-btn:hover {
-            background-color: var(--color-white);
+            border-color: var(--color-accent);
+            color: var(--color-accent);
             transform: scale(1.1);
+            box-shadow: var(--shadow-medium);
         }
-
-        #prevBtn { margin-left: -22px; }
-        #nextBtn { margin-right: -22px; }
 
         /* 8. About Section
         -------------------------------------------------------------------------- */
         #about { background: var(--color-secondary); }
-        .about-content { display: grid; grid-template-columns: 1fr 1.2fr; align-items: center; gap: 4rem; }
+        .about-content { display: grid; grid-template-columns: 1fr 1.2fr; align-items: center; gap: 5rem; }
         .about-image img { width: 100%; border-radius: 12px; box-shadow: var(--shadow-medium); }
         .about-text h2 { font-size: 3rem; margin-bottom: 1.5rem; }
-        .about-text p:last-child { margin-bottom: 0; }
+        .about-text p:last-of-type { margin-bottom: 2rem; }
         .philosophy-list { list-style: none; margin-top: 2rem; }
-        .philosophy-list li { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1rem; }
-        .philosophy-list svg { width: 24px; height: 24px; color: var(--color-accent); flex-shrink: 0; margin-top: 3px; }
+        .philosophy-list li { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.25rem; }
+        .philosophy-list svg { width: 24px; height: 24px; color: var(--color-accent); flex-shrink: 0; margin-top: 5px; }
         
         /* 9. Contact Section
         -------------------------------------------------------------------------- */
-        .contact-wrapper { display: grid; grid-template-columns: 1.5fr 1fr; gap: 4rem; align-items: start; }
-        .contact-form-container { background: var(--color-secondary); padding: 2.5rem; border-radius: 12px; }
+        .contact-wrapper { display: grid; grid-template-columns: 1.5fr 1fr; gap: 5rem; align-items: start; }
+        .contact-form-container { background: var(--color-white); border: 1px solid var(--color-border); padding: 3rem; border-radius: 12px; box-shadow: var(--shadow-medium); }
         .form-group { margin-bottom: 1.5rem; }
         .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 500; color: var(--color-primary); }
         .form-group input, .form-group select, .form-group textarea {
             width: 100%;
-            padding: 14px;
+            padding: 16px;
             border: 1px solid var(--color-border);
             border-radius: 8px;
             font-family: var(--font-body);
             transition: border-color 0.3s ease, box-shadow 0.3s ease;
-            background-color: var(--color-white);
+            background-color: var(--color-secondary);
             color: var(--color-text);
             font-size: 1rem;
         }
@@ -414,7 +419,8 @@
         .form-group input:focus, .form-group select:focus, .form-group textarea:focus { 
             outline: none; 
             border-color: var(--color-accent); 
-            box-shadow: 0 0 0 3px rgba(197, 123, 87, 0.3);
+            box-shadow: 0 0 0 3px rgba(192, 159, 88, 0.25); /* Refined focus */
+            background-color: var(--color-white);
         }
         .form-message {
             margin-top: 1rem;
@@ -425,9 +431,9 @@
         }
         .form-message.success { background-color: #e6f9f0; color: #1e7e4a; border: 1px solid #b3e6c9; }
 
-        .contact-info-item { display: flex; align-items: flex-start; margin-bottom: 2rem; gap: 1rem; }
-        .contact-icon { width: 24px; height: 24px; color: var(--color-accent); flex-shrink: 0; margin-top: 3px;}
-        .contact-info-item strong { display: block; font-size: 1.25rem; font-family: var(--font-heading); color: var(--color-primary); }
+        .contact-info-item { display: flex; align-items: flex-start; margin-bottom: 2rem; gap: 1.5rem; }
+        .contact-icon { color: var(--color-accent); flex-shrink: 0; margin-top: 5px; width: 28px; height: 28px; }
+        .contact-info-item strong { display: block; font-size: 1.25rem; font-family: var(--font-heading); color: var(--color-primary); margin-bottom: 0.25rem;}
         .map-container { 
             height: 250px; 
             border-radius: 12px; 
@@ -440,10 +446,11 @@
         /* 10. Footer
         -------------------------------------------------------------------------- */
         .footer {
-            background-color: var(--color-primary);
+            background-color: #111111;
             color: rgba(255, 255, 255, 0.7);
-            padding: 25px 0;
+            padding: 30px 0;
             transition: background-color 0.3s ease;
+            border-top: 1px solid #222;
         }
         .footer-content {
             display: flex;
@@ -465,138 +472,76 @@
         }
         .social-icons {
             display: flex;
-            gap: 1rem;
+            gap: 1.25rem;
             flex-shrink: 0;
         }
         .social-icons a {
             font-size: 1.25rem;
             color: rgba(255, 255, 255, 0.7);
             text-decoration: none;
-            transition: color 0.3s ease;
+            transition: color 0.3s ease, transform 0.3s ease;
         }
         .social-icons a:hover {
             color: var(--color-accent);
+            transform: scale(1.1);
         }
-
 
         /* 11. Utilities (Mobile Nav, Back-to-Top, Lightbox, Theme Toggle)
         -------------------------------------------------------------------------- */
         .nav-links-mobile {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: var(--color-primary);
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            z-index: 999; /* Below header */
-            opacity: 0;
-            visibility: hidden;
-            transform: scale(0.98);
+            display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: var(--color-primary); flex-direction: column;
+            justify-content: center; align-items: center; z-index: 999; opacity: 0; visibility: hidden; transform: translateY(-10px);
             transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
         }
         
         .lightbox {
-            position: fixed;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            background-color: rgba(0, 0, 0, 0.85);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.3s ease, visibility 0.3s ease;
-            backdrop-filter: blur(5px);
-            padding: 20px;
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(18, 18, 18, 0.9); display: flex; justify-content: center;
+            align-items: center; z-index: 9999; opacity: 0; visibility: hidden; transition: opacity 0.3s ease, visibility 0.3s ease; backdrop-filter: blur(8px); padding: 20px;
         }
         .lightbox.active { opacity: 1; visibility: visible; }
         .lightbox-content { position: relative; max-width: 90%; max-height: 90%; }
-        .lightbox-content img { display: block; max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 8px; box-shadow: var(--shadow-strong); }
+        .lightbox-content img { display: block; max-width: 100%; max-height: 100vh; object-fit: contain; border-radius: 8px; box-shadow: var(--shadow-strong); }
         .lightbox-close {
-            position: absolute;
-            top: -40px; right: -10px;
-            color: white;
-            font-size: 3rem;
-            cursor: pointer;
-            border: none;
-            background: none;
+            position: absolute; top: -10px; right: -40px; color: white; font-size: 2.5rem; cursor: pointer; border: none; background: none; transition: transform 0.3s ease;
         }
+        .lightbox-close:hover { transform: scale(1.2); }
 
         .back-to-top-btn { position: fixed; bottom: 30px; right: 30px; width: 50px; height: 50px; background-color: var(--color-accent); color: var(--color-white); border: none; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer; z-index: 100; opacity: 0; visibility: hidden; transform: translateY(20px); transition: all 0.3s ease; box-shadow: var(--shadow-medium); }
         .back-to-top-btn.visible { opacity: 1; visibility: visible; transform: translateY(0); }
-        .back-to-top-btn:hover { background-color: var(--color-accent-dark); transform: scale(1.1); }
+        .back-to-top-btn:hover { background-color: var(--color-accent-dark); transform: scale(1.1) translateY(-2px); }
         
-        .reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+        .reveal { opacity: 0; transform: translateY(50px); transition: opacity 0.8s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1); }
         .reveal.active { opacity: 1; transform: translateY(0); }
         
-        /* Theme Toggle Styles */
-        .theme-switch {
-            position: relative;
-            display: inline-block;
-            width: 50px;
-            height: 26px;
-            cursor: pointer;
-        }
+        .theme-switch { position: relative; display: inline-block; width: 50px; height: 26px; cursor: pointer; }
         .theme-switch input { display: none; }
-        .slider {
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background-color: rgba(0,0,0,0.2);
-            border-radius: 26px;
-            transition: .4s;
-            display: flex;
-            align-items: center;
-        }
-        .slider::before {
-            position: absolute;
-            content: "";
-            height: 20px;
-            width: 20px;
-            left: 3px;
-            background-color: white;
-            border-radius: 50%;
-            transition: .4s;
-            box-shadow: 0 0 2px rgba(0,0,0,0.2);
-        }
+        .slider { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.2); border-radius: 26px; transition: .4s; display: flex; align-items: center; }
+        .slider::before { position: absolute; content: ""; height: 20px; width: 20px; left: 3px; background-color: white; border-radius: 50%; transition: .4s; box-shadow: 0 0 2px rgba(0,0,0,0.2); }
         .theme-switch input:checked + .slider { background-color: var(--color-accent); }
         .theme-switch input:checked + .slider::before { transform: translateX(24px); }
         .header.scrolled .slider { background-color: var(--color-border); }
-
-        .slider svg {
-            position: absolute;
-            width: 16px;
-            height: 16px;
-            transition: opacity 0.3s ease, transform 0.3s ease;
-            color: #f39c12; /* Sun color */
-        }
+        .slider svg { position: absolute; width: 16px; height: 16px; transition: opacity 0.3s ease, transform 0.3s ease; color: #f39c12; }
         .sun-icon { left: 5px; opacity: 1; transform: scale(1); }
         .moon-icon { right: 5px; opacity: 0; transform: scale(0); color: #f1c40f; }
 
         /* 12. Responsive Design
         -------------------------------------------------------------------------- */
         @media (max-width: 992px) {
-            .about-content, .contact-wrapper { grid-template-columns: 1fr; }
+            section { padding: 100px 0; }
+            .about-content, .contact-wrapper { grid-template-columns: 1fr; gap: 3rem; }
             .about-image { order: -1; margin-bottom: 2rem; }
             .process-steps { grid-template-columns: repeat(2, 1fr); gap: 3rem 2rem; }
             .process-steps::before { display: none; }
-            #prevBtn { margin-left: -5px; }
-            #nextBtn { margin-right: -5px; }
+            .slider-nav { width: 100%; left: 0; }
         }
         
         @media (max-width: 768px) {
             .nav-menu { display: none; }
             .hamburger { display: block; }
-            
             section { padding: 80px 0; }
             .process-steps { grid-template-columns: 1fr; }
-
             .nav-links-mobile { display: flex; }
-            .nav-links-mobile.active { opacity: 1; visibility: visible; transform: scale(1); }
+            .nav-links-mobile.active { opacity: 1; visibility: visible; transform: translateY(0); }
             .nav-links-mobile ul { list-style: none; text-align: center; }
             .nav-links-mobile li { margin: 1.25rem 0; }
             .nav-links-mobile a { color: var(--color-white); text-decoration: none; font-size: 1.75rem; font-family: var(--font-heading); letter-spacing: 1px; }
@@ -605,120 +550,45 @@
             .hamburger.active .bar:nth-child(2) { opacity: 0; }
             .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
             .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
-
             .gallery-item { height: 280px; }
             #specialities .container, #gallery .container { padding: 0; }
-
             .specialities-grid, .gallery-grid {
-                display: grid;
-                grid-auto-flow: column;
-                grid-auto-columns: 85%;
-                overflow-x: auto;
-                scroll-snap-type: x mandatory;
-                padding: 1rem 7.5%;
-                scroll-padding-inline: 7.5%;
-                gap: 1rem;
-                scrollbar-width: none;
+                display: grid; grid-auto-flow: column; grid-auto-columns: 85%; overflow-x: auto; scroll-snap-type: x mandatory;
+                padding: 1rem 7.5%; scroll-padding-inline: 7.5%; gap: 1rem; scrollbar-width: none;
             }
             .specialities-grid::-webkit-scrollbar, .gallery-grid::-webkit-scrollbar { display: none; }
             .speciality-card, .gallery-item { scroll-snap-align: center; width: auto; flex-shrink: 0; }
-            
             .gallery-overlay { opacity: 1; transform: translateY(0); }
             .lightbox-close { right: 10px; top: 10px; }
-            
-            .footer-content {
-                 justify-content: center; /* Center items on small screens */
-            }
-            .footer-content p {
-                 order: 1; /* Move copyright below on mobile */
-                 width: 100%;
-                 margin-top: 1rem;
-            }
+            .footer-content { justify-content: center; }
+            .footer-content p { order: 1; width: 100%; margin-top: 1rem; }
+            .contact-form-container { padding: 2rem; }
         }
 
         /* 13. Dark Mode Styles
         -------------------------------------------------------------------------- */
         html.dark-mode {
-            --color-primary: #f0f0f0;
-            --color-secondary: #1e1e1e;
-            --color-text: #cccccc;
-            --color-text-muted: #888888;
-            --color-white: #121212;
-            --color-border: #333333;
-            --shadow-subtle: 0 2px 8px rgba(0,0,0,0.3);
-            --shadow-medium: 0 8px 24px rgba(0,0,0,0.4);
-            --shadow-strong: 0 12px 32px rgba(0,0,0,0.5);
+            --color-primary: #f0f0f0; --color-secondary: #1e1e1e; --color-text: #cccccc; --color-text-muted: #888888;
+            --color-white: #121212; --color-border: #333333; --shadow-subtle: 0 2px 8px rgba(0,0,0,0.3);
+            --shadow-medium: 0 8px 24px rgba(0,0,0,0.4); --shadow-strong: 0 12px 32px rgba(0,0,0,0.5);
         }
-        
-        /* Dark Mode Toggle Icon Switch */
         html.dark-mode .sun-icon { opacity: 0; transform: scale(0); }
         html.dark-mode .moon-icon { opacity: 1; transform: scale(1); }
-        
-        /* Specific overrides for dark mode */
-        html.dark-mode #home {
-            background: linear-gradient(rgba(0,0,0, 0.6), rgba(0,0,0, 0.6)), url('https://images.unsplash.com/photo-1633655442432-620aa55d7ac1?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
-        }
-
-        html.dark-mode .header.scrolled {
-            background-color: rgba(18, 18, 18, 0.85); /* Semi-transparent dark bg */
-            backdrop-filter: blur(10px);
-        }
-
-        html.dark-mode .call-btn:hover {
-             color: #ffffff;
-        }
-
-        html.dark-mode .nav-links-mobile {
-            background-color: var(--color-white);
-        }
-
-        html.dark-mode .nav-links-mobile a {
-            color: var(--color-primary);
-        }
-
-        html.dark-mode .hamburger.active .bar {
-            background-color: var(--color-primary);
-        }
-
-        html.dark-mode .testimonial-card::before {
-            color: rgba(255, 255, 255, 0.05);
-        }
-        
-        html.dark-mode .slider-btn {
-            background-color: rgba(44, 44, 44, 0.7);
-            color: var(--color-primary);
-        }
-        
-        html.dark-mode .slider-btn:hover {
-            background-color: #333333;
-        }
-
-        html.dark-mode .form-group input, 
-        html.dark-mode .form-group select, 
-        html.dark-mode .form-group textarea {
-            color: var(--color-text);
-        }
-        
-        html.dark-mode .map-container iframe {
-            filter: invert(1) hue-rotate(180deg);
-        }
-
-        /* Footer Fixes */
-        html.dark-mode .footer {
-            background-color: #1e1e1e;
-            border-top: 1px solid var(--color-border);
-            color: var(--color-text-muted);
-        }
-        html.dark-mode .footer .logo {
-            color: var(--color-primary);
-        }
-        html.dark-mode .social-icons a {
-            color: var(--color-text-muted);
-        }
-        html.dark-mode .social-icons a:hover {
-            color: var(--color-accent);
-        }
-
+        html.dark-mode #home { background: linear-gradient(rgba(0,0,0, 0.6), rgba(0,0,0, 0.6)), url('https://images.unsplash.com/photo-1633655442432-620aa55d7ac1?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover; }
+        html.dark-mode .header.scrolled { background-color: rgba(18, 18, 18, 0.85); backdrop-filter: blur(10px); }
+        html.dark-mode .call-btn:hover { color: #ffffff; }
+        html.dark-mode .nav-links-mobile { background-color: var(--color-white); }
+        html.dark-mode .nav-links-mobile a { color: var(--color-primary); }
+        html.dark-mode .hamburger.active .bar { background-color: var(--color-primary); }
+        html.dark-mode .testimonial-card::before { color: rgba(255, 255, 255, 0.05); }
+        html.dark-mode .slider-btn { background-color: rgba(44, 44, 44, 0.8); color: var(--color-primary); }
+        html.dark-mode .slider-btn:hover { background-color: #333333; }
+        html.dark-mode .form-group input, html.dark-mode .form-group select, html.dark-mode .form-group textarea { color: var(--color-text); }
+        html.dark-mode .map-container iframe { filter: invert(1) hue-rotate(180deg); }
+        html.dark-mode .footer { background-color: #121212; border-top: 1px solid var(--color-border); color: var(--color-text-muted); }
+        html.dark-mode .footer .logo { color: var(--color-primary); }
+        html.dark-mode .social-icons a { color: var(--color-text-muted); }
+        html.dark-mode .social-icons a:hover { color: var(--color-accent); }
     </style>
 </head>
 <body>
@@ -729,21 +599,21 @@
                 <nav>
                     <ul class="nav-links">
                         <li><a href="#home" class="active">Home</a></li>
-                        <li><a href="#specialities">Our Craft</a></li>
+                        <li><a href="#specialities">Our Work</a></li>
                         <li><a href="#process">Process</a></li>
-                        <li><a href="#gallery">Creations</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
-                <a href="tel:+919876543210" class="call-btn">Call Us</a>
             </div>
             <div class="navbar-controls">
+                <a href="tel:+919876543210" class="call-btn">Call Us</a>
                 <div class="theme-switch-wrapper">
                     <label class="theme-switch" for="theme-toggle">
                         <input type="checkbox" class="theme-toggle-input" id="theme-toggle" />
                         <div class="slider">
-                            <svg class="sun-icon" xmlns="http://www.w.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.106a.75.75 0 010 1.06l-1.591 1.59a.75.75 0 11-1.06-1.06l1.59-1.59a.75.75 0 011.06 0zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5h2.25a.75.75 0 01.75.75zM17.894 17.894a.75.75 0 01-1.06 0l-1.59-1.591a.75.75 0 111.06-1.06l1.59 1.59a.75.75 0 010 1.061zM12 18a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.894a.75.75 0 010-1.06l1.59-1.59a.75.75 0 011.061 1.06l-1.59 1.59a.75.75 0 01-1.06 0zM6.106 7.166a.75.75 0 011.06 0l1.591 1.59a.75.75 0 01-1.06 1.06l-1.59-1.59a.75.75 0 010-1.06zM3 12a.75.75 0 01.75-.75h2.25a.75.75 0 010 1.5H3.75A.75.75 0 013 12z"/></svg>
+                            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.106a.75.75 0 010 1.06l-1.591 1.59a.75.75 0 11-1.06-1.06l1.59-1.59a.75.75 0 011.06 0zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5h2.25a.75.75 0 01.75.75zM17.894 17.894a.75.75 0 01-1.06 0l-1.59-1.591a.75.75 0 111.06-1.06l1.59 1.59a.75.75 0 010 1.061zM12 18a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.894a.75.75 0 010-1.06l1.59-1.59a.75.75 0 011.061 1.06l-1.59 1.59a.75.75 0 01-1.06 0zM6.106 7.166a.75.75 0 011.06 0l1.591 1.59a.75.75 0 01-1.06 1.06l-1.59-1.59a.75.75 0 010-1.06zM3 12a.75.75 0 01.75-.75h2.25a.75.75 0 010 1.5H3.75A.75.75 0 013 12z"/></svg>
                             <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z" clip-rule="evenodd" /></svg>
                         </div>
                     </label>
@@ -760,9 +630,9 @@
     <div class="nav-links-mobile">
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#specialities">Our Craft</a></li>
+            <li><a href="#specialities">Our Work</a></li>
             <li><a href="#process">Process</a></li>
-            <li><a href="#gallery">Creations</a></li>
+            <li><a href="#gallery">Gallery</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -772,48 +642,42 @@
     <main>
         <section id="home">
              <div class="container reveal">
-                  <h1>The Measure of Excellence</h1>
-                  <p class="subtitle">Bespoke tailoring is an art form. At our Kotputli atelier, we craft distinguished garments that are a true reflection of your personal style and elegance.</p>
-                  <a href="#process" class="cta-button">Discover Our Process</a>
+                   <h1>Perfect Stitching, Perfect Fit</h1>
+                   <p class="subtitle">Good tailoring is an art. Here in Kotputli, we stitch clothes that perfectly match your style and personality.</p>
+                   <a href="#process" class="cta-button">See Our Process</a>
              </div>
         </section>
 
         <section id="specialities">
              <div class="container">
-                  <h2 class="section-title reveal">Our Craft</h2>
-                  <p class="section-subtitle reveal">We combine timeless techniques with modern sensibilities to create exceptional garments for every individual and every significant occasion.</p>
-                  <div class="specialities-grid">
+                   <h2 class="section-title reveal">What We Stitch</h2>
+                   <p class="section-subtitle reveal">We use both classic and modern techniques to create great-looking clothes for everyone, for any occasion.</p>
+                   <div class="specialities-grid">
                         <div class="speciality-card reveal">
                              <svg class="speciality-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.43 2.43a3 3 0 001.128 5.78m1.128-5.78l1.128 5.78m0-5.78l-5.78-1.128m5.78 1.128l5.78 1.128m0-5.78l-1.128-5.78m5.78 5.78l-5.78 1.128m-4.654-3.813a3 3 0 00-5.78-1.128 2.25 2.25 0 01-2.43-2.43a3 3 0 001.128-5.78m1.128 5.78l1.128-5.78m0 5.78l-5.78 1.128m5.78-1.128l5.78-1.128m0 5.78l-1.128 5.78m5.78-5.78l-5.78-1.128M15 4.5a3 3 0 00-3-3a3 3 0 00-3 3m6 0a3 3 0 00-3-3a3 3 0 00-3 3m0 18a3 3 0 003 3a3 3 0 003-3m-6 0a3 3 0 003 3a3 3 0 003-3m0-18a3 3 0 00-3-3a3 3 0 00-3 3m5.78 1.128a3 3 0 00-1.128 5.78l1.128 5.78a3 3 0 005.78-1.128l-1.128-5.78a3 3 0 00-5.78-1.128z" /></svg>
-                             <h3>For Gentlemen</h3>
-                             <p>Command attention with perfectly fitted attire, from sharp business suits to elegant wedding wear that speaks of sophistication.</p>
-                             <ul><li>Made-to-Measure Suits</li><li>Bespoke Shirts & Trousers</li><li>Ceremonial Sherwanis</li><li>Classic Jodhpuris</li></ul>
-                        </div>
-                        <div class="speciality-card reveal">
-                             <svg class="speciality-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" /></svg>
-                             <h3>For Ladies</h3>
-                             <p>Celebrate your unique style with exquisite designs and flawless fits, from daily wear elegance to breathtaking bridal couture.</p>
-                             <ul><li>Artisanal Blouse Designs</li><li>Custom Salwar Kameez</li><li>Elegant Gowns & Dresses</li><li>Bridal Lehenga Fittings</li></ul>
+                             <h3>For Gents</h3>
+                             <p>Look your best with perfectly fitted clothes. We stitch sharp suits for work and elegant outfits for weddings.</p>
+                             <ul><li>Made-to-Measure Suits</li><li>Shirts & Trousers</li><li>Ceremonial Sherwanis</li><li>Classic Jodhpuris</li></ul>
                         </div>
                         <div class="speciality-card reveal">
                              <svg class="speciality-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" /></svg>
-                             <h3>For the Youth</h3>
-                             <p>Define your style with contemporary designs fused with classic tailoring, ensuring the younger generation stands out with confidence.</p>
+                             <h3>For Youngsters</h3>
+                             <p>Get the latest styles with our expert stitching. We create modern outfits that help the younger generation look and feel confident.</p>
                              <ul><li>Modern-Cut Suits</li><li>Statement Shirts</li><li>Contemporary Ethnic Wear</li><li>Precision Alterations</li></ul>
                         </div>
-                  </div>
+                   </div>
              </div>
         </section>
 
         <section id="process">
              <div class="container">
-                  <h2 class="section-title reveal">The Bespoke Process</h2>
-                  <p class="section-subtitle reveal">Our four-step journey to the perfect garment ensures precision, quality, and a truly personal experience from start to finish.</p>
-                  <div class="process-steps">
+                   <h2 class="section-title reveal">Our Stitching Process</h2>
+                   <p class="section-subtitle reveal">Our simple four-step process ensures every piece of clothing is made with care, quality, and your personal needs in mind.</p>
+                   <div class="process-steps">
                         <div class="step-card reveal">
                              <div class="step-number">01</div>
                              <h3>Consultation</h3>
-                             <p>We discuss your vision, select the finest fabrics, and advise on a style that perfectly suits your occasion and personality.</p>
+                             <p>First, we talk about the design you want. We help you choose the best cloth and a style that is perfect for your personality and the occasion.</p>
                         </div>
                         <div class="step-card reveal">
                              <div class="step-number">02</div>
@@ -823,104 +687,100 @@
                         <div class="step-card reveal">
                              <div class="step-number">03</div>
                              <h3>Creation</h3>
-                             <p>Our master tailor and artisans hand-cut and craft your garment with precision, passion, and decades of experience.</p>
+                             <p>Our experienced tailors carefully cut the cloth and stitch your clothes by hand, using their years of experience.</p>
                         </div>
                         <div class="step-card reveal">
                              <div class="step-number">04</div>
                              <h3>Fitting & Finish</h3>
-                             <p>We conduct a final fitting to make any necessary adjustments, ensuring absolute comfort and a flawless silhouette.</p>
+                             <p>We do a final fitting and make any small changes needed to make sure it's comfortable and looks perfect on you.</p>
                         </div>
-                  </div>
+                   </div>
              </div>
         </section>
         
         <section id="gallery">
              <div class="container">
-                  <h2 class="section-title reveal">Our Creations</h2>
-                  <p class="section-subtitle reveal">A glimpse into the world of GM-X, where fabric and thread become timeless expressions of personal style.</p>
-                  <div class="gallery-grid">
+                   <h2 class="section-title reveal">Our Work</h2>
+                   <p class="section-subtitle reveal">Here are some examples of our work, showing how we turn fabric and thread into stylish clothes.</p>
+                   <div class="gallery-grid">
                         <div class="gallery-item reveal">
                              <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bespoke Men's Suit">
-                             <div class="gallery-overlay"><div class="gallery-overlay-title">Bespoke Suit</div></div>
+                             <div class="gallery-overlay"><div class="gallery-overlay-title">Custom Suit</div></div>
                         </div>
                         <div class="gallery-item reveal">
                              <img src="https://www.osaa.in/cdn/shop/files/101948_Custom.jpg?v=1726276092&width=1440" alt="Custom Sherwani">
                              <div class="gallery-overlay"><div class="gallery-overlay-title">Ceremonial Wear</div></div>
                         </div>
                         <div class="gallery-item reveal">
-                             <img src="https://bella-signora.com/wp-content/uploads/2025/01/frill-sleeve-pattern-jimmy-choo-shining-material-designer-blouse-ambiradhikabllon-wine.webp" alt="Designer Blouse">
-                             <div class="gallery-overlay"><div class="gallery-overlay-title">Artisanal Blouse</div></div>
+                            <img src="https://cdn.sareeka.com/image/data2024/blue-velvet-embroidered-sequins-and-thread-work-jodhpuri-suit-289123.jpg" alt="Jodhpuri Suit">
+                            <div class="gallery-overlay"><div class="gallery-overlay-title">Jodhpuri Suit</div></div>
                         </div>
-                        <div class="gallery-item reveal">
-                           <img src="https://cdn.sareeka.com/image/data2024/blue-velvet-embroidered-sequins-and-thread-work-jodhpuri-suit-289123.jpg" alt="Jodhpuri Suit">
-                           <div class="gallery-overlay"><div class="gallery-overlay-title">Jodhpuri Suit</div></div>
-                        </div>
-                  </div>
+                   </div>
              </div>
         </section>
 
         <section id="testimonials">
              <div class="container">
-                  <div class="testimonial-slider">
+                   <div class="testimonial-slider">
                         <div class="testimonial-slides">
-                              <div class="testimonial-card">
+                             <div class="testimonial-card">
                                    <p class="testimonial-text">The attention to detail is simply unmatched. My suit from GM-X is the best-fitting garment I have ever owned. It's not just clothing; it's confidence woven into fabric.</p>
                                    <cite class="testimonial-author">— Aman Sharma, Jaipur</cite>
-                              </div>
-                              <div class="testimonial-card">
-                                   <p class="testimonial-text">I came to them with a complex blouse design and they brought it to life perfectly. The craftsmanship is incredible, and I received so many compliments. Highly recommended!</p>
-                                   <cite class="testimonial-author">— Priya Singh, Delhi</cite>
-                              </div>
-                              <div class="testimonial-card">
+                             </div>
+                             <div class="testimonial-card">
                                    <p class="testimonial-text">For my brother's wedding, the whole family got their outfits stitched at GM-X. Everyone looked fantastic. Professional service and exceptional quality. Thank you!</p>
                                    <cite class="testimonial-author">— The Mehra Family, Kotputli</cite>
-                              </div>
+                             </div>
+                             <div class="testimonial-card">
+                                   <p class="testimonial-text">Top-class tailoring and great service. They understood exactly what I wanted for my reception suit and delivered perfectly. Highly recommended for anyone in the area.</p>
+                                   <cite class="testimonial-author">— Rohan Verma, Behror</cite>
+                             </div>
                         </div>
                         <div class="slider-nav">
-                              <button id="prevBtn" class="slider-btn" aria-label="Previous testimonial">
+                             <button id="prevBtn" class="slider-btn" aria-label="Previous testimonial">
                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>
-                              </button>
-                              <button id="nextBtn" class="slider-btn" aria-label="Next testimonial">
+                             </button>
+                             <button id="nextBtn" class="slider-btn" aria-label="Next testimonial">
                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
-                              </button>
+                             </button>
                         </div>
-                  </div>
+                   </div>
              </div>
         </section>
 
         <section id="about">
              <div class="container">
-                  <div class="about-content">
+                   <div class="about-content">
                         <div class="about-image reveal"><img src="https://images.unsplash.com/photo-1630272777562-17735957d8c0?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="GM-X Tailor shop interior"></div>
                         <div class="about-text reveal">
-                             <h2>Our Heritage</h2>
-                             <p><strong>GM-X styling creation is more than a tailor shop; it's a testament to the enduring art of bespoke tailoring.</strong></p>
-                             <p>Nestled in the heart of Kotputli, our atelier was founded on a passion for quality and an unwavering commitment to craftsmanship. We believe a well-made garment is an investment—in your confidence, your style, and yourself. It's a story told in fabric and thread, where generations of skill meet contemporary style, and we are honoured to be its authors.</p>
+                             <h2>Our Story</h2>
+                             <p><strong>GM-X styling creation is more than just a tailor shop; it's a place where we take pride in perfect stitching.</strong></p>
+                             <p>Located in the heart of Kotputli, our shop was started with a love for quality and perfect stitching. We believe good clothes help you feel confident and look stylish. It's a story told in fabric and thread, where years of skill meet today's style, and we are proud to create these for you.</p>
                              
                              <ul class="philosophy-list">
                                    <li>
-                                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                                       <div><strong>Uncompromising Quality:</strong> We source only the finest fabrics and materials to ensure longevity and a luxurious feel.</div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                        <div><strong>Best Quality:</strong> We use only the best fabrics and materials to make sure your clothes last long and feel great.</div>
                                    </li>
                                    <li>
-                                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                                       <div><strong>Personalised Experience:</strong> Every client relationship is a partnership, built on understanding your unique vision and needs.</div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                        <div><strong>Personal Service:</strong> We listen to what you want and work with you to create the perfect outfit.</div>
                                    </li>
                                    <li>
-                                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                                       <div><strong>Timeless Craftsmanship:</strong> We honor traditional techniques while embracing modern aesthetics to create garments that are both classic and current.</div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                        <div><strong>Expert Stitching:</strong> We use proven tailoring methods to create clothes that are both classic and modern.</div>
                                    </li>
                              </ul>
                         </div>
-                  </div>
+                   </div>
              </div>
         </section>
         
         <section id="contact">
              <div class="container">
-                  <h2 class="section-title reveal">Begin Your Bespoke Journey</h2>
-                  <p class="section-subtitle reveal">Reach out to schedule a private consultation or to inquire about our services. We look forward to crafting a masterpiece exclusively for you.</p>
-                  <div class="contact-wrapper">
+                   <h2 class="section-title reveal">Get in Touch</h2>
+                   <p class="section-subtitle reveal">Contact us to book an appointment or ask any questions. We look forward to stitching something special for you.</p>
+                   <div class="contact-wrapper">
                         <div class="contact-form-container reveal">
                              <h3>Request an Appointment</h3>
                              <form id="contactForm">
@@ -931,20 +791,20 @@
                                                <option value="" disabled selected>Select a service</option>
                                                <option value="Suit Stitching">Suit Stitching (Men)</option>
                                                <option value="Ethnic Wear (Men)">Ethnic Wear (Men)</option>
-                                               <option value="Blouse/Suit Stitching">Blouse/Suit Stitching (Women)</option>
+                                               <option value="Youth Wear">Youth Wear</option>
                                                <option value="Alterations">Alterations</option>
                                                <option value="General Consultation">General Consultation</option>
                                          </select>
                                    </div>
                                    <div class="form-group"><label for="message">Message (Optional)</label><textarea id="message" name="message" placeholder="Tell us a bit about your requirement..."></textarea></div>
-                                 <button type="submit" class="cta-button" style="width: 100%;">Send Request</button>
-                                 <div class="form-message" id="form-message"></div>
+                                <button type="submit" class="cta-button" style="width: 100%;">Send Request</button>
+                                   <div class="form-message" id="form-message"></div>
                              </form>
                         </div>
                         <div class="contact-info reveal">
                              <div class="contact-info-item">
                                    <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
-                                   <div><strong>Our Atelier</strong><p>Near Police Station, Kotputli, Rajasthan, 303108</p></div>
+                                   <div><strong>Our Shop</strong><p>Near Police Station, Kotputli, Rajasthan, 303108</p></div>
                              </div>
                              <div class="contact-info-item">
                                    <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 6.75z" /></svg>
@@ -958,7 +818,7 @@
                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14092.83984180862!2d76.1881728362143!3d27.70243415174092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396d11e5f8659179%3A0x6b8655c688358485!2sKotputli%2C%20Rajasthan%20303108!5e0!3m2!1sen!2sin!4v1663412345678" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                              </div>
                         </div>
-                  </div>
+                   </div>
              </div>
         </section>
     </main>
@@ -967,7 +827,7 @@
         <div class="container">
             <div class="footer-content">
                 <a href="#home" class="logo">GM-X</a>
-                <p>© 2025 GM-X styling creation. Handcrafted with Excellence in Kotputli.</p>
+                <p>© 2025 GM-X styling creation. Expertly Stitched in Kotputli.</p>
                 <div class="social-icons">
                     <a href="#" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a>
                     <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.584.069-4.85c.149-3.225 1.664 4.771 4.919-4.919 1.266-.057 1.644-.069 4.85-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.281.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98-1.281-.059-1.689-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.441 1.441 1.441 1.441-.645 1.441-1.441-.645-1.44-1.441-1.44z"/></svg></a>
@@ -1001,7 +861,7 @@
             // --- Scrolled Header & Back-to-Top Button Visibility ---
             window.addEventListener('scroll', () => {
                 header.classList.toggle('scrolled', window.scrollY > 0);
-                backToTopBtn.classList.toggle('visible', window.scrollY > 300);
+                backToTopBtn.classList.toggle('visible', window.scrollY > 400);
             });
 
             // --- Mobile Navigation Toggle ---
@@ -1080,6 +940,11 @@
                     currentIndex = (currentIndex < totalSlides - 1) ? currentIndex + 1 : 0;
                     updateSlider();
                 });
+                 // Auto-slide functionality
+                setInterval(() => {
+                    currentIndex = (currentIndex < totalSlides - 1) ? currentIndex + 1 : 0;
+                    updateSlider();
+                }, 7000); // Change slide every 7 seconds
             }
             
             // --- Gallery Lightbox ---
@@ -1107,6 +972,11 @@
                     closeLightbox();
                 }
             });
+            document.addEventListener('keydown', (e) => {
+                if(e.key === 'Escape' && lightbox.classList.contains('active')) {
+                    closeLightbox();
+                }
+            });
 
             // --- THEME TOGGLE LOGIC ---
             const themeToggle = document.getElementById('theme-toggle');
@@ -1129,7 +999,6 @@
 
             const getCurrentTheme = () => {
                 const savedTheme = localStorage.getItem(THEME_KEY);
-                // If a theme is saved, use it. Otherwise, default to 'light'.
                 return savedTheme || 'light';
             };
             
